@@ -1,1 +1,8 @@
+.bash_history
+.git-credentials
+.gitconfig
+.lesshst
+*.tmp
+*.log
+*.swp
 
