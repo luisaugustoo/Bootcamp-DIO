@@ -1,0 +1,73 @@
+*alterações entre o GitHub (remoto) e sua máquina local*
+
+guia visual simplificado do fluxo Git local ↔ GitHub, mostrando o que acontece em cada etapa:
+
+[Trabalho Local]
+   |
+   | 1. Adicionar alterações ao staging
+   |    git add .
+   v
+[Staging Area]
+   |
+   | 2. Salvar alterações no repositório local
+   |    git commit -m "Mensagem do commit"
+   v
+[Repositório Local]
+   |
+   | 3. Baixar alterações do remoto (se houver)
+   |    git pull origin main
+   v
+[Mesclagem / Conflitos]
+   |
+   | 4. Resolver conflitos (se houver)
+   v
+[Repositório Local atualizado]
+   |
+   | 5. Enviar alterações para o remoto
+   |    git push origin main
+   v
+[GitHub / Repositório Remoto]
+
+´´´
+🔹 Explicando cada etapa
+
+git add .
+
+Seleciona os arquivos que você quer incluir no próximo commit.
+
+Equivalente a “preparar o material” antes de salvar.
+
+git commit -m "..."
+
+Salva um snapshot do seu trabalho local.
+
+Tudo permanece no seu computador, ainda não foi para o GitHub.
+
+git pull origin main
+
+Puxa as alterações do remoto e tenta mesclar com o que você tem localmente.
+
+Evita que você sobrescreva mudanças feitas por outras pessoas ou por você mesmo em outro computador.
+
+Resolver conflitos
+
+Se o mesmo arquivo foi alterado no remoto e local, o Git não consegue decidir sozinho.
+
+Você precisa escolher ou combinar as versões.
+
+git push origin main
+
+Envia os commits locais para o GitHub, mantendo remoto e local sincronizados.
+
+🔹 Dica visual mental
+
+Working Directory (Local) → seus arquivos no computador
+
+Staging → “pré-visualização” do que será salvo
+
+Local Repository → histórico de commits no computador
+
+Remote Repository (GitHub) → histórico de commits no servidor
+
+O fluxo é: Local → Staging → Local Repository → Remote Repository e você sempre puxa antes de enviar (pull antes do push) para não perder nada.
+´´´
