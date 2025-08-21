@@ -12,6 +12,10 @@ Repositório para armazenar resumos sobre Git e GitHub do curso **Versionamento 
 |-----------------|--------------------------------|
 | Exemplo de aula  | [Resumo da aula](link-para-o-resumo) |
 
+````
+.gitignore
+````
 ## 🔍 Referências
 
 - [Digital Innovation One](https://www.dio.me/en)
+
